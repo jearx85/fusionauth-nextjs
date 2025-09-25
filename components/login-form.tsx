@@ -122,9 +122,12 @@ export function LoginForm({
       </div>
       <div className="text-center text-sm">
         No tienes una cuenta?{" "}
-        <a href="/register" className="underline underline-offset-4">
+        <p 
+          className="underline underline-offset-4 cursor-pointer hover:text-purple-600 inline-block"
+          onClick={() => router.push("/register")}
+        >
           Registrate
-        </a>
+        </p>
       </div>
     </form>
   );
